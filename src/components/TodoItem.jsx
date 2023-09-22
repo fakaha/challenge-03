@@ -54,7 +54,7 @@ const TodoItem = ({ todo, setRefresh }) => {
   };
 
   return (
-    <li className={`${todo.complete ? "checked" : ""}`}>
+    <li className={`${todo.complete ? "checked" : ""} listTodos`}>
       {todo.task}
       {isEditing ? (
         <div className="containerEdit">

@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import NewTodoPage from './Pages/NewTodoPage.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {path: '/', element: <App />,},

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TodoItem from "./TodoItem";
 import { BsSearch } from "react-icons/bs";
+import { Button } from 'react-bootstrap';
 
 const TodoList = ({ isRefresh, setRefresh }) => {
   const [tasks, setTasks] = useState([]);
@@ -65,24 +66,24 @@ const TodoList = ({ isRefresh, setRefresh }) => {
           onChange={(e) => setQuery(e.target.value)}
         />
         <span
-          style={{ fontSize: "23px", backgroundColor: '#16A3B5', padding: '0 8px' }}
-          onClick={searchHandler}
+          style={{ fontSize: "23px", padding: '0 8px' }}
+          onClick={searchHandler} className="rounded-3 ms-1 bg-primary "
         >
-          <BsSearch />
+          <BsSearch/>
         </span>
       </div>
 
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="filterButtons">
-          <button className="filterButton" onClick={() => setFilter("all")}>
+          <Button className="filterButton" onClick={() => setFilter("all")}>
             All
-          </button>
-          <button className="filterButton" onClick={() => setFilter("done")}>
+          </Button>
+          <Button className="filterButton" onClick={() => setFilter("done")}>
             Done
-          </button>
-          <button className="filterButton" onClick={() => setFilter("todo")}>
+          </Button>
+          <Button className="filterButton" onClick={() => setFilter("todo")}>
             Todo
-          </button>
+          </Button>
         </div>
       </div>
       {filteredTodos.length === 0 ? (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BsSearch } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import { Button, Container } from 'react-bootstrap';
 
 const Header = ({setRefresh}) => {
 
@@ -32,14 +32,10 @@ const Header = ({setRefresh}) => {
   return (
     <div className="header">
       <h2>TodoSearch</h2>
-      <div className="search-input">
-        {/* <input type="text" placeholder="Add todo" value={task} onChange={(e) => setTask(e.target.value)}/> */}
-      </div>
 
       <div className="search-add-button">
-        {/* <button className="search-button">Search</button> */}
         {/* <button className="add-button" onClick={addTask}>Add New Task</button> */}
-        <Link to="/newTodoPage"><h2 style={{fontSize: '30px', padding: '10px', backgroundColor: '#16A3B5', borderRadius: '18px', color: 'white'}}>Add new Task</h2></Link>
+        <Link to="/newTodoPage"><Button>Add new Task</Button></Link>
       </div>
     </div>
   );

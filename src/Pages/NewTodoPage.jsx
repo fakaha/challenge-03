@@ -19,13 +19,12 @@ const NewTodoPage = () => {
         body: JSON.stringify(newTodo),
       }).then(() => {
         alert('Todo added')
-        // ketika sukses menambah data, reset form dengan mengeset state task menjadi empty string
         settask('');
       });
     }else{
         alert('Todo tidak boleh kosong!')
     }
-    };
+};
 
   return (
     <div>
@@ -33,11 +32,11 @@ const NewTodoPage = () => {
             <h2>Add Todo</h2>
             <div className="inputButton" style={{display: 'flex', alignItems: 'center', gap: '15px'}}>
             <input type="text" value={task} onChange={(e) => settask(e.target.value)} placeholder='Add todo' style={{color: 'black'}}/>
-            <BsFillPlusCircleFill style={{color: '#16A3B5'}} onClick={() => {addTodo();}}/>
+            <BsFillPlusCircleFill className='text-primary' style={{color: '#16A3B5'}} onClick={() => {addTodo();}}/>
             </div>
         </div>
         <div className="backButton">
-            <Link to='/'>Kembali</Link>
+            <Link className='text-primary' to='/'>Kembali</Link>
         </div>
     </div>
   )

@@ -19,7 +19,6 @@ body{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* border: 1px solid #333; */
   padding-bottom: 25px;
 }
 
@@ -54,19 +53,13 @@ input{
   justify-content:space-around;
 }
 
-.search-button{
-  width: 40%;
-  background-color: #16A3B5;
-}
-
-.add-button{
-  width: 15%;
-  background-color: #16A3B5;
-}
-
 li{
   display: flex;
   justify-content: space-between;
+}
+
+li.listTodos:nth-child(odd){
+  background-color: #dfdfdf;
 }
 
 .handler-buttons{

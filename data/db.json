@@ -46,9 +46,14 @@
       "id": 13
     },
     {
-      "task": "ngoding",
+      "task": "makan teman",
       "complete": false,
       "id": 14
+    },
+    {
+      "task": "mandi",
+      "complete": false,
+      "id": 15
     }
   ]
 }
