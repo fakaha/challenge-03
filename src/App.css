@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  background-color: #fff;
+}
+
+.App{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.header{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid #333; */
+  padding-bottom: 25px;
+}
+
+h2, li{
+  color: #333;
+}
+
+.search-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input input{
+  border: 1px solid rgb(145, 135, 135);
+  color: #333;
+}
+
+.search-icon{
+  background-color: #16A3B5;
+  padding: 8px;
+}
+
+input{
+  width: 70%;
+  background-color: #fff;
+  padding: 8px;
+}
+
+.search-add-button{
+  display: flex;
+  justify-content:space-around;
+}
+
+.search-button{
+  width: 40%;
+  background-color: #16A3B5;
+}
+
+.add-button{
+  width: 15%;
+  background-color: #16A3B5;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.handler-buttons{
+  display: flex;
+  gap: 5px;
+  justify-content: end;
+}
+
+.handler-buttons input{
+  height: 13px;
+  width: 13px;
+}
+
+.checked{
+  color: #D93649;
+  text-decoration: line-through;
+}
+
+.searchInput{
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.filterButtons{ 
+  margin: 15px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filterButton{
+  background-color: #16A3B5;
+  transition: 0.2s;
+  width: 80px;
+}
+
+.filterButton:hover{
+  transform: scale(1.1);
+}
